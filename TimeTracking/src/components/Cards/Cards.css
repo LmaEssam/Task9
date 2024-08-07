@@ -1,0 +1,93 @@
+@font-face {
+    font-family:'Rubik-M' ;
+    src: url(../../assets/Rubik/static/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family:'Rubik-L' ;
+    src: url(../../assets/Rubik/static/Rubik-Light.ttf);
+}
+.cards{
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+}
+.innerdiv {
+    box-sizing: border-box;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: hsl(235, 46%, 20%);
+  }
+  
+  .innerdiv:hover {
+    background-color: hsl(235, 45%, 61%,90%);
+  }
+  
+.img{
+    width: 50px;
+    height: 50px;
+    margin-left: 180px;
+}
+.label{
+    color: white;
+    font-family:'Rubik-M' ;
+}
+.rowdiv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+}
+.name{
+    margin: 0;
+    color: white;
+    font-family:'Rubik-L' ;
+}
+button{
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    cursor: pointer;
+}
+p{
+    color: hsl(236, 100%, 87%);
+    margin-right: 80px;
+    font-family:'Rubik-M' ;
+}
+.dots{
+    transition: filter 0.3s ease;
+}
+.dots:hover{
+    filter: brightness(150%) invert(20%); 
+}
+@media screen and (max-width:375px) {
+    .cards{
+        width: 330px;
+        height: 160px;
+    }
+    .innerdiv{
+        width: 330px;
+        height: 110px;
+    }
+    .rowdiv{
+        column-gap: 210px;
+    }
+    .columndiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 75px;
+    }
+    p{
+        margin: 0;
+    }
+    .img{
+        margin-left: 260px;
+    }
+}
